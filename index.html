@@ -1,20 +1,33 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barcode Scanner</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+    <title>Barcode Scanner App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Scan barcode</h1>
-        <div class="barcode-frame" id="barcode-frame"></div>
-        <p>Place your barcode within the frame</p>
-        <button id="start-scanning">Start scanning</button>
-        <ul id="detected-barcode-list"></ul> <!-- List for detected barcodes -->
-    </div>
+    <header>
+        <button id="close-btn">&#10005;</button>
+        <h1>Scan Product</h1>
+    </header>
+    <main>
+        <h2>Point at a barcode to scan</h2>
+        <div id="scanner-container">
+            <video id="preview"></video>
+        </div>
+        <button id="start-btn">Start scanning</button>
+        <p id="instruction">Hold your phone 6 inches away from the barcode</p>
+    </main>
+    <nav>
+        <button class="nav-btn">&#8962;</button>
+        <button class="nav-btn">&#128269;</button>
+        <button class="nav-btn">&#128247;</button>
+        <button class="nav-btn">&#9776;</button>
+        <button class="nav-btn">&#128100;</button>
+    </nav>
+    <script src="https://unpkg.com/html5-qrcode"></script>
     <script src="script.js"></script>
 </body>
 </html>

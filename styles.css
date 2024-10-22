@@ -1,0 +1,128 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    position: relative;
+}
+
+#close-btn {
+    position: absolute;
+    left: 0.625rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#scanner-container {
+    width: 90%;
+    max-width: 25rem;
+    aspect-ratio: 1;
+    border: 2px solid #ccc;
+    margin: 1.25rem 0;
+    overflow: hidden;
+}
+
+#preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#start-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#instruction {
+    text-align: center;
+    color: #666;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.625rem;
+    background-color: #f8f9fa;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 14px;
+    }
+
+    #scanner-container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #scanner-container {
+        max-width: 30rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 2rem;
+    }
+}
