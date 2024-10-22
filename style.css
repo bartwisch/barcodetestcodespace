@@ -14,8 +14,8 @@ body {
 }
 
 .barcode-frame {
-    width: 60%; /* Adjusted width */
-    height: 200px; /* Adjusted height */
+    width: 80%; /* Updated to 80% of screen size */
+    height: 300px; /* Adjusted height */
     border: 2px solid #fff;
     margin: 20px auto;
 }
