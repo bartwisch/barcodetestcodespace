@@ -14,12 +14,10 @@ body {
 }
 
 .barcode-frame {
-    width: 80%;
-    height: 300px;
+    width: 60%; /* Adjusted width */
+    height: 200px; /* Adjusted height */
     border: 2px solid #fff;
     margin: 20px auto;
-    background-image: url('barcode-placeholder.png'); /* Placeholder for barcode scanning */
-    background-size: cover;
 }
 
 button {
@@ -34,4 +32,10 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+#detected-barcode-list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
 }

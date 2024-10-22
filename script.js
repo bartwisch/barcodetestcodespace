@@ -21,7 +21,14 @@ document.getElementById('start-scanning').addEventListener('click', function() {
     });
 
     Quagga.onDetected(function(data) {
-        alert('Barcode detected: ' + data.codeResult.code);
+        const code = data.codeResult.code;
+        alert('Barcode detected: ' + code);
+        
+        // Add detected barcode to the list
+        const listItem = document.createElement('li');
+        listItem.textContent = code;
+        document.getElementById('detected-barcode-list').appendChild(listItem);
+        
         Quagga.stop(); // Stop scanning after detection
     });
 });
